@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dcheld/api-restfull-spring-boot.svg?branch=main)](https://travis-ci.org/dcheld/api-restfull-spring-boot)
+[![Build Status](https://travis-ci.com/dcheld/api-restfull-spring-boot.svg?branch=main)](https://travis-ci.com/dcheld/api-restfull-spring-boot)
 
 # Meu primerio projeto
 
