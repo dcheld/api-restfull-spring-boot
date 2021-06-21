@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  dbhost:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+    ports:
+      -  "3306:3306"
+    volumes:
+      - "dbfiles:/var/lib/mysql"
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      - PMA_ARBITRARY=1
+    depends_on:
+      - dbhost
+
+volumes:
+  dbfiles:
